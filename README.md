@@ -20,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+hipcall = Hipcall::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", region: "https://app.hipcall.com.tr/api/")
+
+# Get all tasks
+tasks = hipcall.tasks.list
+
+# Get first task
+first_task = hipcall.tasks.retrieve(task_id: 1)
+
+# Create a task
+new_task = hipcall.tasks.create(name: 'Lets email the contact')
+```
 
 ## Development
 
