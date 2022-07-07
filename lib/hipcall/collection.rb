@@ -8,9 +8,9 @@ module Hipcall
 				data: body[key].map { |attrs| type.new(attrs) },
 			)
 		end
-	end
 
-	def initialize(data:)
-		@data = data
+		def initialize(data:)
+			@data = data
+		end
 	end
 end

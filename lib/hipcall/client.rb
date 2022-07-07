@@ -5,19 +5,23 @@ module Hipcall
 	class Client
 		attr_reader :api_key, :version, :region, :adapter
 
-		def initialize(api_key:, version: "v20211124", region: "https://app.hipcall.com/api/", adapter: Faraday.default_adapter)
+		def initialize(api_key:, version: "v20211124", region: "http://localhost:8000/api/", adapter: Faraday.default_adapter)
 			@api_key = api_key
 			@version = version
 			@region = region
 			@adapter = adapter
 		end
 
+		def tasks
+			TaskResource.new(self)
+		end
+
 		def connection
-			@connection ||= Faraday.new do |connection|
-				connection.url_prefix = region + version
+			@connection ||= Faraday.new (region + version) do |connection|
+				connection.request :authorization, :Bearer, api_key
 				connection.request :json
 				connection.response :json, content_type: "application/json"
-				connection.adapter adapter
+				connection.adapter adapter, @stubs
 			end
 		end
 	end

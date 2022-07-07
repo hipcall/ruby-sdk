@@ -7,6 +7,9 @@ module Hipcall
   autoload :Collection, "hipcall/collection"
   autoload :Error, "hipcall/error"
   autoload :Object, "hipcall/object"
+  autoload :Resource, "hipcall/resource"
 
-  autoload :Tasks, "hipcall/objects/tasks"
+  autoload :Task, "hipcall/objects/task"
+
+  autoload :TaskResource, "hipcall/resources/tasks"
 end

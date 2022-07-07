@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hipcall-sdk (0.1.0)
+    hipcall-sdk (1.0.0)
       faraday (~> 1.10)
       faraday_middleware (~> 1.2)
 

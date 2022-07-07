@@ -7,4 +7,6 @@ WORKDIR /usr/src/hipcall-sdk
 
 COPY . .
 
-CMD bundle install
+RUN bundle install
+
+CMD bash

@@ -1,18 +1,19 @@
 require "ostruct"
 
 module Hipcall
-	class Object
+	class Object < OpenStruct
 		def initialize(attributes)
-			@attributes = OpenStruct.new(attributes)
+			super to_ostruct(attributes)
 		end
 		
-		def method_missing(method, *args, &block)
-			attribute = @attributes.send(method, *args, &block)
-			attribute.is_a?(Hash) ? Object.new(attribute) : attribute
-		end
-
-		def respond_to_missing?(method, include_private = false)
-			true
+		def to_ostruct(obj)
+			if obj.is_a?(Hash)
+				OpenStruct.new(obj.map { |key, val| [key, to_ostruct(val)] }.to_h)
+			elsif obj.is_a?(Array)
+				obj.map { |o| to_ostruct(o) }
+			else # Assumed to be a primitive value
+				obj
+			end
 		end
 	end
 end
