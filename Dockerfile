@@ -6,3 +6,5 @@ RUN bundle config --global frozen 1
 WORKDIR /usr/src/hipcall-sdk
 
 COPY . .
+
+CMD bundle install

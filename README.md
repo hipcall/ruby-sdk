@@ -27,8 +27,11 @@ TODO: Write usage instructions here
 We use Docker for dev env. 
 
 ```
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.0 bundle install
+docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app -it ruby:3.0 HIPCALL_API_KEY=token
 ```
+
+```
+$ ./bin/
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
