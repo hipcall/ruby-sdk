@@ -10,6 +10,8 @@ module Hipcall
   autoload :Resource, "hipcall/resource"
 
   autoload :Task, "hipcall/objects/task"
+  autoload :User, "hipcall/objects/user"
 
   autoload :TaskResource, "hipcall/resources/tasks"
+  autoload :UserResource, "hipcall/resources/users"
 end
