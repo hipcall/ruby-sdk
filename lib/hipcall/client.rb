@@ -23,7 +23,7 @@ module Hipcall
 		def connection
 			@connection ||= Faraday.new (region + version) do |connection|
 				connection.request :authorization, :Bearer, api_key
-				connection.request :json
+				connection.request :json, :accept => 'application/json'
 				connection.response :json, content_type: "application/json"
 				connection.adapter adapter, @stubs
 			end
