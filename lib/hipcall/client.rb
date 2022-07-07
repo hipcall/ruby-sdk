@@ -5,11 +5,12 @@ module Hipcall
 	class Client
 		attr_reader :api_key, :version, :region, :adapter
 
-		def initialize(api_key:, version: "v20211124", region: "https://app.hipcall.com/api/", adapter: Faraday.default_adapter)
+		def initialize(api_key:, version: "v20211124", region: "https://app.hipcall.com/api/", adapter: Faraday.default_adapter, stubs: nil)
 			@api_key = api_key
 			@version = version
 			@region = region
 			@adapter = adapter
+			@stubs = stubs
 		end
 
 		def tasks
