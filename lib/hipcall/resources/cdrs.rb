@@ -5,12 +5,8 @@ module Hipcall
 			Collection.from_response(response, key: "data", type: Cdr)
 		end
 
-		def retrieve(year:, mounth:, day:, task_id:)
+		def retrieve(year:, mounth:, day:, cdr_uuid:)
 			Cdr.new get_request("cdrs/#{year}/#{mounth}/#{day}/#{cdr_uuid}").body.dig("data")
-		end
-
-		def create(**attributes)
-			Cdr.new post_request("cdrs", body: attributes).body.dig("data")
 		end
 	end
 end
