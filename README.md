@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-hipcall = Hipcall::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", region: "https://app.hipcall.com.tr/api/")
+hipcall = Hipcall::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", base_url: "https://app.hipcall.com.tr/api/")
 
 # Get all tasks
 tasks = hipcall.tasks.list

@@ -29,7 +29,7 @@ module Hipcall
 		end
 
 		def handle_response(response)
-			message = response.body["errors"]
+			message = response.body["data"]["errors"]
 			case response.status
 			when 400
 				raise Error, message
