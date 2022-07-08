@@ -11,10 +11,12 @@ module Hipcall
 
 
   autoload :Cdr, "hipcall/objects/cdr"
+  autoload :Number, "hipcall/objects/number"
   autoload :Task, "hipcall/objects/task"
   autoload :User, "hipcall/objects/user"
 
   autoload :CdrResource, "hipcall/resources/cdrs"
+  autoload :NumberResource, "hipcall/resources/numbers"
   autoload :TaskResource, "hipcall/resources/tasks"
   autoload :UserResource, "hipcall/resources/users"
 end

@@ -17,6 +17,10 @@ module Hipcall
 			CdrResource.new(self)
 		end
 
+		def numbers
+			NumberResource.new(self)
+		end
+
 		def tasks
 			TaskResource.new(self)
 		end
