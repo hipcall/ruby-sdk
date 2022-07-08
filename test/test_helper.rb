@@ -6,7 +6,7 @@ require "json"
 
 class Minitest::Test
   def stub_response(fixture:, status: 200, headers: {"Content-Type" => "application/json"})
-    [status, headers, File.read("test/fixtures/#{fixture}.json")]
+    [status, headers, File.read("test/fixtures/v20211124/#{fixture}.json")]
   end
 
   def stub_request(path, response:, method: :get, body: {})
