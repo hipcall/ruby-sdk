@@ -13,6 +13,10 @@ module Hipcall
 			@stubs = stubs
 		end
 
+		def cdrs
+			CdrResource.new(self)
+		end
+
 		def tasks
 			TaskResource.new(self)
 		end
