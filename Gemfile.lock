@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hipcall-sdk (1.0.0)
+    hipcall (1.0.0)
       faraday (~> 1.10)
       faraday_middleware (~> 1.2)
 
@@ -68,7 +68,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  hipcall-sdk!
+  hipcall!
   minitest (>= 5.0.5)
   rake (~> 13.0)
   standard
