@@ -1,0 +1,27 @@
+{
+	"data": {
+			"resource_type": "cdr",
+			"uuid": "caedfd1b-25ec-447e-ad87-3b7eb3d358ea",
+			"direction": 1,
+			"user_id": 2,
+			"contact_id": 0,
+			"channel_type": 1,
+			"channel_id": 1,
+			"started_at": "2022-07-07T20:40:39+0000",
+			"answered_at": null,
+			"bridged_at": null,
+			"ended_at": "2022-07-07T20:40:57+0000",
+			"call_duration": 18,
+			"first_touch_duration": 0,
+			"missing_call": false,
+			"missing_call_reason": 0,
+			"caller_id": 1,
+			"caller_type": 1,
+			"caller_number": "+905326202911",
+			"callee_id": 2,
+			"callee_type": 3,
+			"callee_number": "101",
+			"record_url": null,
+			"hangup_by": 2
+	}
+}

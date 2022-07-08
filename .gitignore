@@ -57,3 +57,4 @@ build-iPhoneSimulator/
 
 # IDE
 *.code-workspace
+PRIVATE.md
