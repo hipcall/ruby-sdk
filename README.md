@@ -22,32 +22,55 @@ Or install it yourself as:
 
 ```ruby
 hipcall = Hipcall::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", base_url: "https://app.hipcall.com.tr/api/")
+```
 
-# Get all tasks
+### Cdr resource
+
+```ruby
+# List
+cdrs = hipcall.cdrs.list
+
+# Retrieve
+year = 2022
+mounth = 07
+day = 07
+cdr_uuid = "caedfd1b-25ec-447e-ad87-3b7eb3d358ea"
+cdr = hipcall.cdrs.retrieve(year: year, mounth: mounth, day: day, cdr_uuid: cdr_uuid)
+```
+
+### Number resource
+
+```ruby
+# List
+numbers = hipcall.numbers.list
+
+# Retrieve
+number = hipcall.numbers.retrieve(number_id: 1)
+```
+
+### Task resource
+
+```ruby
+# List
 tasks = hipcall.tasks.list
 
-# Get first task
-first_task = hipcall.tasks.retrieve(task_id: 1)
+# Retrieve
+task = hipcall.tasks.retrieve(task_id: 1)
 
-# Create a task
+# Create
 new_task = hipcall.tasks.create(name: 'Lets email the contact')
 ```
 
-## Development
+### User resource
 
-We use Docker for dev env. 
+```ruby
+# List
+users = hipcall.users.list
 
+# Retrieve
+user = hipcall.users.retrieve(user_id: 1)
 ```
-docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app -it ruby:3.0 HIPCALL_API_KEY=token
-```
-
-```
-$ ./bin/
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hipcall-sdk.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hipcall/ruby-sdk .
