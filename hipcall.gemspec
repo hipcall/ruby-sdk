@@ -5,7 +5,7 @@ require_relative "lib/hipcall/version"
 Gem::Specification.new do |spec|
   spec.name = "hipcall-sdk"
   spec.version = HipcallSdk::VERSION
-  spec.authors = ["Hipcall Development Team", "Onur Ozgur OZKAN"]
+  spec.authors = ["Hipcall Development Team", "Onur Ozgur OZKAN", "Kendal BOZKURT"]
   spec.email = ["hello@hipcall.com"]
 
   spec.summary = "Hipcall's Ruby SDK"
@@ -17,6 +17,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/hipcall/ruby-sdk"
   spec.metadata["changelog_uri"] = "https://github.com/hipcall/ruby-sdk/blob/master/CHANGELOG.md"
+  spec.licenses = "MIT"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

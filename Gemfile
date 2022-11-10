@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in hipcall-sdk.gemspec
+# Specify your gem's dependencies in hipcall.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
