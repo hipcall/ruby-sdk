@@ -4,7 +4,7 @@ require_relative "lib/hipcall/version"
 
 Gem::Specification.new do |spec|
   spec.name = "hipcall-sdk"
-  spec.version = Hipcall::VERSION
+  spec.version = HipcallSdk::VERSION
   spec.authors = ["Hipcall Development Team", "Onur Ozgur OZKAN"]
   spec.email = ["hello@hipcall.com"]
 

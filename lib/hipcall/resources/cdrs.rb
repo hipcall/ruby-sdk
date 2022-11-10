@@ -1,4 +1,4 @@
-module Hipcall
+module HipcallSdk
 	class CdrResource < Resource
 		def list(**params)
 			response = get_request("cdrs", params: params)

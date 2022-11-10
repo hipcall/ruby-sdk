@@ -1,4 +1,4 @@
-module Hipcall
+module HipcallSdk
 	class Collection
 		attr_reader :data, :links, :meta
 
