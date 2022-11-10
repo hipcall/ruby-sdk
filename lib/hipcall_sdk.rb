@@ -2,7 +2,7 @@
 
 require_relative "hipcall/version"
 
-module Hipcall
+module HipcallSdk
   autoload :Client, "hipcall/client"
   autoload :Collection, "hipcall/collection"
   autoload :Error, "hipcall/error"

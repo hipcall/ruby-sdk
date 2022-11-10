@@ -1,4 +1,4 @@
-module Hipcall
+module HipcallSdk
 	class UserResource < Resource
 		def list(**params)
 			response = get_request("users", params: params)

@@ -11,7 +11,7 @@ require "hipcall"
 # require "pry"
 # Pry.start
 
-client = Hipcall::Client.new(api_key: ENV["HIPCALL_API_KEY"])
+client = HipcallSdk::Client.new(api_key: ENV["HIPCALL_API_KEY"])
 
 require "irb"
 IRB.start(__FILE__)

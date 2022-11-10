@@ -1,6 +1,6 @@
 require "ostruct"
 
-module Hipcall
+module HipcallSdk
 	class Object < OpenStruct
 		def initialize(attributes)
 			super to_ostruct(attributes)

@@ -1,7 +1,7 @@
 require "faraday"
 require "faraday_middleware"
 
-module Hipcall
+module HipcallSdk
 	class Client
 		attr_reader :api_key, :version, :base_url, :adapter
 
