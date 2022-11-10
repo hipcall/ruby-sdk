@@ -1,4 +1,4 @@
-module Hipcall
+module HipcallSdk
 	class TaskResource < Resource
 		def list(**params)
 			response = get_request("tasks", params: params)

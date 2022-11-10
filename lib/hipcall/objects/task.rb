@@ -1,4 +1,4 @@
-module Hipcall
+module HipcallSdk
 	class Task < Object
 	end
 end

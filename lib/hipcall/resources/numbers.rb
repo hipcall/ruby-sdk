@@ -1,4 +1,4 @@
-module Hipcall
+module HipcallSdk
 	class NumberResource < Resource
 		def list(**params)
 			response = get_request("numbers", params: params)

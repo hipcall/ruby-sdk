@@ -1,4 +1,4 @@
-module Hipcall
+module HipcallSdk
 	class Resource
 		attr_reader :client
 
