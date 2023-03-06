@@ -24,8 +24,6 @@ Or install it yourself as:
 require "hipcall_sdk"
 
 hipcall = HipcallSdk::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", base_url: "https://app.hipcall.com.tr/api/")
-# hipcall = HipcallSdk::Client.new(api_key: "6|rh0M6XS9Q8RKo2U8tnwHBzlImN8EjkB6RsQvJCg0", version: "v20211124", base_url: "https://stage-app.hipcall.com/api/")
-
 ```
 
 ### Cdr resource
@@ -90,6 +88,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/hipcal
 ### Some useful commands
 
 ```
+rake test
 rake build
 sudo gem install --local pkg/hipcall-X.X.X.gem
 ```
