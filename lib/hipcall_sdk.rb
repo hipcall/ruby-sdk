@@ -9,14 +9,15 @@ module HipcallSdk
   autoload :Object, "hipcall/object"
   autoload :Resource, "hipcall/resource"
 
-
   autoload :Cdr, "hipcall/objects/cdr"
   autoload :Number, "hipcall/objects/number"
   autoload :Task, "hipcall/objects/task"
   autoload :User, "hipcall/objects/user"
+  autoload :Comment, "hipcall/objects/comment"
 
   autoload :CdrResource, "hipcall/resources/cdrs"
   autoload :NumberResource, "hipcall/resources/numbers"
   autoload :TaskResource, "hipcall/resources/tasks"
   autoload :UserResource, "hipcall/resources/users"
+  autoload :CommentResource, "hipcall/resources/comments"
 end

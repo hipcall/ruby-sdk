@@ -73,6 +73,22 @@ users = hipcall.users.list
 user = hipcall.users.retrieve(user_id: 1)
 ```
 
+### Comment resource
+
+```ruby
+# Create
+new_comment = hipcall.comments.create(commentable_type: 'company', commentable_id: 8777, content: 'Comment body, note, etc')
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/hipcall/ruby-sdk .
+
+
+### Some useful commands
+
+```
+rake test
+rake build
+sudo gem install --local pkg/hipcall-X.X.X.gem
+```
