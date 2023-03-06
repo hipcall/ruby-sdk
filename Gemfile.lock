@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hipcall (1.0.0)
+    hipcall (2.0.0)
       faraday (~> 1.10)
       faraday_middleware (~> 1.2)
 
@@ -9,7 +9,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
-    faraday (1.10.0)
+    faraday (1.10.3)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -35,7 +35,7 @@ GEM
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
     minitest (5.16.2)
-    multipart-post (2.2.3)
+    multipart-post (2.3.0)
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
@@ -66,9 +66,11 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
+  faraday (~> 1.10, >= 1.10.3)
   hipcall!
   minitest (>= 5.0.5)
   rake (~> 13.0)

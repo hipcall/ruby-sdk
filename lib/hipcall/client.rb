@@ -29,6 +29,10 @@ module HipcallSdk
 			UserResource.new(self)
 		end
 
+		def comments
+			CommentResource.new(self)
+		end
+
 		def connection
 			@connection ||= Faraday.new (base_url + version) do |connection|
 				connection.request :authorization, :Bearer, api_key
