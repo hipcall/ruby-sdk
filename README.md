@@ -24,6 +24,8 @@ Or install it yourself as:
 require "hipcall_sdk"
 
 hipcall = HipcallSdk::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", base_url: "https://app.hipcall.com.tr/api/")
+# hipcall = HipcallSdk::Client.new(api_key: "6|rh0M6XS9Q8RKo2U8tnwHBzlImN8EjkB6RsQvJCg0", version: "v20211124", base_url: "https://stage-app.hipcall.com/api/")
+
 ```
 
 ### Cdr resource
@@ -77,9 +79,17 @@ user = hipcall.users.retrieve(user_id: 1)
 
 ```ruby
 # Create
-new_comment = hipcall.comments.create(commentable_type: 'company', commentable_id: 1, content: 'Comment body, note, etc')
+new_comment = hipcall.comments.create(commentable_type: 'company', commentable_id: 8777, content: 'Comment body, note, etc')
 ```
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/hipcall/ruby-sdk .
+
+
+### Some useful commands
+
+```
+rake build
+sudo gem install --local pkg/hipcall-X.X.X.gem
+```
