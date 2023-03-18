@@ -1,0 +1,72 @@
+{
+	"data": [
+			{
+					"resource_type": "greeting",
+					"id": 1,
+					"name": "Welcome",
+					"direct_dial_extension": true,
+					"timeout": 0,
+					"max_input_try_count": 1,
+					"state": "active"
+			},
+			{
+					"resource_type": "greeting",
+					"id": 2,
+					"name": "Out of business hours",
+					"direct_dial_extension": false,
+					"timeout": 0,
+					"max_input_try_count": 0,
+					"state": "active"
+			},
+			{
+					"resource_type": "greeting",
+					"id": 3,
+					"name": "Out of business hours",
+					"direct_dial_extension": false,
+					"timeout": 0,
+					"max_input_try_count": 0,
+					"state": "active"
+			},
+			{
+					"resource_type": "greeting",
+					"id": 4,
+					"name": "Welcome to Microsoft",
+					"direct_dial_extension": true,
+					"timeout": 0,
+					"max_input_try_count": 3,
+					"state": "active"
+			}
+	],
+	"links": {
+			"first": "https://api.hipcall.com/api/v20211124/greetings?page=1",
+			"last": "https://api.hipcall.com/api/v20211124/greetings?page=1",
+			"prev": null,
+			"next": null
+	},
+	"meta": {
+			"current_page": 1,
+			"from": 1,
+			"last_page": 1,
+			"links": [
+					{
+							"url": null,
+							"label": "pagination.previous",
+							"active": false
+					},
+					{
+							"url": "https://api.hipcall.com/api/v20211124/greetings?page=1",
+							"label": "1",
+							"active": true
+					},
+					{
+							"url": null,
+							"label": "pagination.next",
+							"active": false
+					}
+			],
+			"path": "https://api.hipcall.com/api/v20211124/greetings",
+			"per_page": 10,
+			"to": 4,
+			"total": 4
+	}
+}

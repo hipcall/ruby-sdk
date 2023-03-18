@@ -1,0 +1,11 @@
+{
+	"data": {
+			"resource_type": "greeting",
+			"id": 1,
+			"name": "Welcome",
+			"direct_dial_extension": true,
+			"timeout": 0,
+			"max_input_try_count": 1,
+			"state": "active"
+	}
+}
