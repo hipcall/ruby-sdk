@@ -1,0 +1,16 @@
+{
+	"data": {
+			"resource_type": "team",
+			"id": 1,
+			"name": "All users",
+			"user_case": "all",
+			"wrap_up_time": 5,
+			"strategy": "random",
+			"say_line_number": false,
+			"say_line_number_in_second": 120,
+			"callback": false,
+			"callback_dtmf": 0,
+			"callback_action": "none",
+			"state": "active"
+	}
+}

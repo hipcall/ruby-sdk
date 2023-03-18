@@ -1,0 +1,64 @@
+{
+	"data": [
+			{
+					"resource_type": "team",
+					"id": 1,
+					"name": "All users",
+					"user_case": "all",
+					"wrap_up_time": 5,
+					"strategy": "random",
+					"say_line_number": false,
+					"say_line_number_in_second": 120,
+					"callback": false,
+					"callback_dtmf": 0,
+					"callback_action": "none",
+					"state": "active"
+			},
+			{
+					"resource_type": "team",
+					"id": 2,
+					"name": "Microsoft Team",
+					"user_case": "all",
+					"wrap_up_time": 15,
+					"strategy": "random",
+					"say_line_number": true,
+					"say_line_number_in_second": 120,
+					"callback": false,
+					"callback_dtmf": 0,
+					"callback_action": "none",
+					"state": "active"
+			}
+	],
+	"links": {
+			"first": "https://api.hipcall.com/api/v20211124/teams?page=1",
+			"last": "https://api.hipcall.com/api/v20211124/teams?page=1",
+			"prev": null,
+			"next": null
+	},
+	"meta": {
+			"current_page": 1,
+			"from": 1,
+			"last_page": 1,
+			"links": [
+					{
+							"url": null,
+							"label": "pagination.previous",
+							"active": false
+					},
+					{
+							"url": "https://api.hipcall.com/api/v20211124/teams?page=1",
+							"label": "1",
+							"active": true
+					},
+					{
+							"url": null,
+							"label": "pagination.next",
+							"active": false
+					}
+			],
+			"path": "https://api.hipcall.com/api/v20211124/teams",
+			"per_page": 10,
+			"to": 2,
+			"total": 2
+	}
+}
