@@ -1,5 +1,19 @@
 # Changelog
 
+## v2.2.0
+
+### Features
+
+- Add extension resource
+- Add team resource
+- Add greeting resource
+
+## v2.1.0
+
+### Features
+
+- Add comment resource
+
 ## v2.0.0
 
 ### Refactor
