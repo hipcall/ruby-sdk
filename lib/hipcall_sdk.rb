@@ -10,14 +10,20 @@ module HipcallSdk
   autoload :Resource, "hipcall/resource"
 
   autoload :Cdr, "hipcall/objects/cdr"
+  autoload :Comment, "hipcall/objects/comment"
+  autoload :Extension, "hipcall/objects/extension"
+  autoload :Greeting, "hipcall/objects/greeting"
   autoload :Number, "hipcall/objects/number"
   autoload :Task, "hipcall/objects/task"
+  autoload :Team, "hipcall/objects/team"
   autoload :User, "hipcall/objects/user"
-  autoload :Comment, "hipcall/objects/comment"
 
   autoload :CdrResource, "hipcall/resources/cdrs"
+  autoload :CommentResource, "hipcall/resources/comments"
+  autoload :ExtensionResource, "hipcall/resources/extensions"
+  autoload :GreetingResource, "hipcall/resources/greetings"
   autoload :NumberResource, "hipcall/resources/numbers"
   autoload :TaskResource, "hipcall/resources/tasks"
+  autoload :TeamResource, "hipcall/resources/teams"
   autoload :UserResource, "hipcall/resources/users"
-  autoload :CommentResource, "hipcall/resources/comments"
 end

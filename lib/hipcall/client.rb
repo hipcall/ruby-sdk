@@ -13,8 +13,29 @@ module HipcallSdk
 			@stubs = stubs
 		end
 
+		def connection
+			@connection ||= Faraday.new (base_url + version) do |connection|
+				connection.request :authorization, :Bearer, api_key
+				connection.request :json, :accept => 'application/json'
+				connection.response :json, content_type: "application/json"
+				connection.adapter adapter, @stubs
+			end
+		end
+
 		def cdrs
 			CdrResource.new(self)
+		end
+
+		def comments
+			CommentResource.new(self)
+		end
+
+		def extensions
+			ExtensionResource.new(self)
+		end
+
+		def greetings
+			GreetingResource.new(self)
 		end
 
 		def numbers
@@ -25,21 +46,12 @@ module HipcallSdk
 			TaskResource.new(self)
 		end
 
+		def teams
+			TeamResource.new(self)
+		end
+
 		def users
 			UserResource.new(self)
-		end
-
-		def comments
-			CommentResource.new(self)
-		end
-
-		def connection
-			@connection ||= Faraday.new (base_url + version) do |connection|
-				connection.request :authorization, :Bearer, api_key
-				connection.request :json, :accept => 'application/json'
-				connection.response :json, content_type: "application/json"
-				connection.adapter adapter, @stubs
-			end
 		end
 	end
 end

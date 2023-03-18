@@ -23,7 +23,7 @@ Or install it yourself as:
 ```ruby
 require "hipcall_sdk"
 
-hipcall = HipcallSdk::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", base_url: "https://app.hipcall.com.tr/api/")
+hipcall = HipcallSdk::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", base_url: "https://app.hipcall.com/api/")
 ```
 
 ### Cdr resource
@@ -38,6 +38,33 @@ mounth = 07
 day = 07
 cdr_uuid = "caedfd1b-25ec-447e-ad87-3b7eb3d358ea"
 cdr = hipcall.cdrs.retrieve(year: year, mounth: mounth, day: day, cdr_uuid: cdr_uuid)
+```
+
+### Comment resource
+
+```ruby
+# Create
+new_comment = hipcall.comments.create(commentable_type: 'company', commentable_id: 8777, content: 'Comment body, note, etc')
+```
+
+### Extension resource
+
+```ruby
+# List
+extensions = hipcall.extensions.list
+
+# Retrieve
+extension = hipcall.extensions.retrieve(extension_id: 1)
+```
+
+### Greetings resource
+
+```ruby
+# List
+greetings = hipcall.greetings.list
+
+# Retrieve
+greeting = hipcall.greetings.retrieve(greeting_id: 1)
 ```
 
 ### Number resource
@@ -63,6 +90,16 @@ task = hipcall.tasks.retrieve(task_id: 1)
 new_task = hipcall.tasks.create(name: 'Lets email the contact')
 ```
 
+### Team resource
+
+```ruby
+# List
+teams = hipcall.teams.list
+
+# Retrieve
+team = hipcall.teams.retrieve(team_id: 1)
+```
+
 ### User resource
 
 ```ruby
@@ -73,17 +110,11 @@ users = hipcall.users.list
 user = hipcall.users.retrieve(user_id: 1)
 ```
 
-### Comment resource
 
-```ruby
-# Create
-new_comment = hipcall.comments.create(commentable_type: 'company', commentable_id: 8777, content: 'Comment body, note, etc')
-```
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/hipcall/ruby-sdk .
-
 
 ### Some useful commands
 
