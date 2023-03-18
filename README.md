@@ -110,8 +110,6 @@ users = hipcall.users.list
 user = hipcall.users.retrieve(user_id: 1)
 ```
 
-
-
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/hipcall/ruby-sdk .
@@ -122,4 +120,5 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/hipcal
 rake test
 rake build
 sudo gem install --local pkg/hipcall-X.X.X.gem
+gem push pkg/hipcall-x.x.x.gem
 ```
