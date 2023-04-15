@@ -30,6 +30,14 @@ module HipcallSdk
 			CommentResource.new(self)
 		end
 
+		def companies
+			CompanyResource.new(self)
+		end
+
+		def contacts
+			ContactResource.new(self)
+		end
+
 		def extensions
 			ExtensionResource.new(self)
 		end

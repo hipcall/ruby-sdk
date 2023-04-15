@@ -40,6 +40,38 @@ cdr_uuid = "caedfd1b-25ec-447e-ad87-3b7eb3d358ea"
 cdr = hipcall.cdrs.retrieve(year: year, mounth: mounth, day: day, cdr_uuid: cdr_uuid)
 ```
 
+### Company resource
+
+#### Add tags to company
+
+```ruby
+# Add tags to company
+tags = hipcall.companies.create_tags(company_id: 1, tags: ["tag1", "tag2"]);
+```
+
+#### Remove a tag from company
+
+```ruby
+# Remove a tag from company
+hipcall.companies.delete_tags(company_id: 1, tag_id: 1);
+```
+
+### Contact resource
+
+#### Add tags to contact
+
+```ruby
+# Add tags to contact
+tags = hipcall.contacts.create_tags(contact_id: 1, tags: ["tag1", "tag2"]);
+```
+
+#### Remove a tag from contact
+
+```ruby
+# Remove a tag from contact
+hipcall.contacts.delete_tags(contact_id: 1, tag_id: 1);
+```
+
 ### Comment resource
 
 ```ruby

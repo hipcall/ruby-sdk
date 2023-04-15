@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.3.0
+
+- Add tags to Contact 
+- Remove tags from Contact.
+- Add tags to Company 
+- Remove tags from Company.
+
 ## v2.2.0
 
 ### Features

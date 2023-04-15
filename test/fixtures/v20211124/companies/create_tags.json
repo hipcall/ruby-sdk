@@ -1,0 +1,20 @@
+{
+	"data": [
+		{
+			"resource_type": "tag",
+			"id": 1,
+			"name": "abc",
+			"tag_type": 0,
+			"color": "#025196",
+			"description": null
+		},
+		{
+			"resource_type": "tag",
+			"id": 3,
+			"name": "def",
+			"tag_type": 0,
+			"color": "#025196",
+			"description": null
+		}
+	]
+}
