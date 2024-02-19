@@ -73,12 +73,6 @@
 					"updated_at": "2023-02-24T18:34:53+0000"
 			}
 	],
-	"links": {
-			"first": "https://api.hipcall.com/api/v20211124/extensions?page=1",
-			"last": "https://api.hipcall.com/api/v20211124/extensions?page=1",
-			"prev": null,
-			"next": null
-	},
 	"meta": {
 			"current_page": 1,
 			"from": 1,

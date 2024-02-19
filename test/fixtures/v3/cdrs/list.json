@@ -51,12 +51,6 @@
             "hangup_by": 2
         }
     ],
-    "links": {
-        "first": "http://localhost:8000/api/v20211124/calls?page=1",
-        "last": null,
-        "prev": null,
-        "next": "http://localhost:8000/api/v20211124/calls?page=2"
-    },
     "meta": {
         "current_page": 1,
         "from": 1,

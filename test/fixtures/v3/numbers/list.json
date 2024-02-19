@@ -7,12 +7,6 @@
 					"number": "+908503902777"
 			}
 	],
-	"links": {
-			"first": "http://localhost:8000/api/v20211124/numbers?page=1",
-			"last": "http://localhost:8000/api/v20211124/numbers?page=1",
-			"prev": null,
-			"next": null
-	},
 	"meta": {
 			"current_page": 1,
 			"from": 1,

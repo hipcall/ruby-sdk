@@ -15,12 +15,6 @@
             "updated_at": "2022-06-29T10:20:40+0000"
         }
     ],
-    "links": {
-        "first": "https://app.hipcall.com/api/v20211124/tasks?page=1",
-        "last": "https://app.hipcall.com/api/v20211124/tasks?page=2",
-        "prev": null,
-        "next": "https://app.hipcall.com/api/v20211124/tasks?page=2"
-    },
     "meta": {
         "current_page": 1,
         "from": 1,

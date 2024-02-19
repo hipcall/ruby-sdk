@@ -37,12 +37,6 @@
 					"state": "active"
 			}
 	],
-	"links": {
-			"first": "https://api.hipcall.com/api/v20211124/greetings?page=1",
-			"last": "https://api.hipcall.com/api/v20211124/greetings?page=1",
-			"prev": null,
-			"next": null
-	},
 	"meta": {
 			"current_page": 1,
 			"from": 1,
