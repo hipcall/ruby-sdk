@@ -26,10 +26,6 @@ module HipcallSdk
 			CallResource.new(self)
 		end
 
-		def comments
-			CommentResource.new(self)
-		end
-
 		def companies
 			CompanyResource.new(self)
 		end

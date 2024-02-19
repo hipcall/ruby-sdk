@@ -48,7 +48,7 @@
 							"active": false
 					},
 					{
-							"url": "https://api.hipcall.com/api/v20211124/greetings?page=1",
+							"url": "https://api.hipcall.com/api/v3/greetings?page=1",
 							"label": "1",
 							"active": true
 					},
@@ -58,7 +58,7 @@
 							"active": false
 					}
 			],
-			"path": "https://api.hipcall.com/api/v20211124/greetings",
+			"path": "https://api.hipcall.com/api/v3/greetings",
 			"per_page": 10,
 			"to": 4,
 			"total": 4

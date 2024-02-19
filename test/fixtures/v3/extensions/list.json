@@ -84,7 +84,7 @@
 							"active": false
 					},
 					{
-							"url": "https://api.hipcall.com/api/v20211124/extensions?page=1",
+							"url": "https://api.hipcall.com/api/v3/extensions?page=1",
 							"label": "1",
 							"active": true
 					},
@@ -94,7 +94,7 @@
 							"active": false
 					}
 			],
-			"path": "https://api.hipcall.com/api/v20211124/extensions",
+			"path": "https://api.hipcall.com/api/v3/extensions",
 			"per_page": 10,
 			"to": 8,
 			"total": 8

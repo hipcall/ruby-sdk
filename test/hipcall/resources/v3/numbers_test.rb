@@ -3,7 +3,7 @@ require "test_helper"
 class NumbersResourceTest < Minitest::Test
 	def test_list
 		stub = stub_request("numbers", response: stub_response(fixture: "numbers/list"))
-		client = HipcallSdk::Client.new(api_key: "fake", version: "v20211124", adapter: :test, stubs: stub)
+		client = HipcallSdk::Client.new(api_key: "fake", version: "v3", adapter: :test, stubs: stub)
 		numbers = client.numbers.list
 	
 		assert_equal HipcallSdk::Collection, numbers.class

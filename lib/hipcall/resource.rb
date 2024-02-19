@@ -41,6 +41,8 @@ module HipcallSdk
 				raise Error, message
 			when 419 
 				raise Error, message
+			when 422
+				raise Error, message
 			when 429
 				raise Error, message
 			when 500

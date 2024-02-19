@@ -40,7 +40,7 @@
 							"active": false
 					},
 					{
-							"url": "https://api.hipcall.com/api/v20211124/teams?page=1",
+							"url": "https://api.hipcall.com/api/v3/teams?page=1",
 							"label": "1",
 							"active": true
 					},
@@ -50,7 +50,7 @@
 							"active": false
 					}
 			],
-			"path": "https://api.hipcall.com/api/v20211124/teams",
+			"path": "https://api.hipcall.com/api/v3/teams",
 			"per_page": 10,
 			"to": 2,
 			"total": 2
