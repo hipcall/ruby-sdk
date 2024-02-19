@@ -1,6 +1,9 @@
 # Hipcall
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hipcall`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files 
+you need to be able to package up your Ruby library into a gem. 
+Put your Ruby code in the file `lib/hipcall`. To experiment with 
+that code, run `bin/console` for an interactive prompt.
 
 ## Installation
 
@@ -23,21 +26,25 @@ Or install it yourself as:
 ```ruby
 require "hipcall_sdk"
 
-hipcall = HipcallSdk::Client.new(api_key: "YOUR_TOKEN_IS_HERE", version: "v20211124", base_url: "https://app.hipcall.com/api/")
+hipcall = HipcallSdk::Client.new(
+    api_key: "YOUR_TOKEN_IS_HERE", 
+    version: "v3", 
+    base_url: "https://use.hipcall.com/api/"
+)
 ```
 
-### Cdr resource
+### Call resource
 
 ```ruby
 # List
-cdrs = hipcall.cdrs.list
+calls = hipcall.calls.list
 
 # Retrieve
 year = 2022
 mounth = 07
 day = 07
-cdr_uuid = "caedfd1b-25ec-447e-ad87-3b7eb3d358ea"
-cdr = hipcall.cdrs.retrieve(year: year, mounth: mounth, day: day, cdr_uuid: cdr_uuid)
+call_uuid = "caedfd1b-25ec-447e-ad87-3b7eb3d358ea"
+call = hipcall.calls.retrieve(year: year, mounth: mounth, day: day, call_uuid: call_uuid)
 ```
 
 ### Company resource

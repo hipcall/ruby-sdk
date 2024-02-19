@@ -5,7 +5,7 @@ module HipcallSdk
 	class Client
 		attr_reader :api_key, :version, :base_url, :adapter
 
-		def initialize(api_key:, version: "v20211124", base_url: "https://app.hipcall.com/api/", adapter: Faraday.default_adapter, stubs: nil)
+		def initialize(api_key:, version: "v3", base_url: "https://use.hipcall.com/api/", adapter: Faraday.default_adapter, stubs: nil)
 			@api_key = api_key
 			@version = version
 			@base_url = base_url
@@ -22,8 +22,8 @@ module HipcallSdk
 			end
 		end
 
-		def cdrs
-			CdrResource.new(self)
+		def calls
+			CallResource.new(self)
 		end
 
 		def comments

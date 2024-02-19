@@ -1,6 +1,6 @@
 {
 	"data": {
-			"resource_type": "cdr",
+			"resource_type": "call",
 			"uuid": "caedfd1b-25ec-447e-ad87-3b7eb3d358ea",
 			"direction": 1,
 			"user_id": 2,
