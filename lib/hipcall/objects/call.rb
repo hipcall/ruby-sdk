@@ -1,4 +1,4 @@
 module HipcallSdk
-	class Cdr < Object
+	class Call < Object
 	end
 end

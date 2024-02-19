@@ -5,7 +5,7 @@ require "test_helper"
 class TasksResourceTest < Minitest::Test
 	def test_list
 		stub = stub_request("tasks", response: stub_response(fixture: "tasks/list"))
-		client = HipcallSdk::Client.new(api_key: "fake", version: "v20211124", adapter: :test, stubs: stub)
+		client = HipcallSdk::Client.new(api_key: "fake", version: "v3", adapter: :test, stubs: stub)
 		tasks = client.tasks.list
 	
 		assert_equal HipcallSdk::Collection, tasks.class

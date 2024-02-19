@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hipcall (2.2.0)
+    hipcall (3.0.0)
       faraday (~> 1.10)
       faraday_middleware (~> 1.2)
 
@@ -35,7 +35,7 @@ GEM
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
     minitest (5.16.2)
-    multipart-post (2.3.0)
+    multipart-post (2.4.0)
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
@@ -66,6 +66,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  ruby
   x86_64-darwin-22
   x86_64-linux
 

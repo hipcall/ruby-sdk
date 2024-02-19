@@ -9,7 +9,7 @@ module HipcallSdk
   autoload :Object, "hipcall/object"
   autoload :Resource, "hipcall/resource"
 
-  autoload :Cdr, "hipcall/objects/cdr"
+  autoload :Call, "hipcall/objects/call"
   autoload :Contact, "hipcall/objects/contact"
   autoload :Company, "hipcall/objects/company"
   autoload :Comment, "hipcall/objects/comment"
@@ -21,7 +21,7 @@ module HipcallSdk
   autoload :Team, "hipcall/objects/team"
   autoload :User, "hipcall/objects/user"
 
-  autoload :CdrResource, "hipcall/resources/cdrs"
+  autoload :CallResource, "hipcall/resources/calls"
   autoload :ContactResource, "hipcall/resources/contacts"
   autoload :CompanyResource, "hipcall/resources/companies"
   autoload :CommentResource, "hipcall/resources/comments"

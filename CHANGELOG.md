@@ -1,5 +1,10 @@
 # Changelog
 
+## v3.0.0
+
+- Start support new Hipcall API.
+- Change `Cdr` resource name to `Call`
+
 ## v2.3.0
 
 - Add tags to Contact 
